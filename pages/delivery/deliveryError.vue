@@ -9,7 +9,7 @@
 		<view class="content" v-else-if="errorType == 2">
 			<image class="error-image" src="/static/image/delivery-succes-1@2x.png" mode=""></image>
 			<text class="error-title fs-36 mt-36">出库完成！</text>
-			<button class="custom-btn verify-btn">继续包装出库</button>
+			<button class="custom-btn verify-btn" @click="handleBack">继续包装出库</button>
 		</view>
 		<view class="pt-34 pl-32 pr-32" v-else>
 			<view class="fs-36">
@@ -37,12 +37,24 @@
 	import {
 		ref
 	} from 'vue';
-
+	import {
+		onLoad
+	} from "@dcloudio/uni-app";
 	const errorType = ref(2)
+	onLoad((option) => {
+		console.log(option)
+		let data = option;
+		errorType.value = data.errorType
+	})
 	const active = ref(1)
 	const handleChange = (type) =>{
 		active.value = type
 		
+	}
+	const handleBack = ()=>{
+		 uni.navigateBack({
+			 delta:2
+		 })
 	}
 </script>
 

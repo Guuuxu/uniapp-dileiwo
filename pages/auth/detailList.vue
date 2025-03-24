@@ -14,7 +14,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="footer w_100 mt-48 fixed safe-area-bottom pb-20" style="">
+		<view class="footer w_100 mt-48 fixed pb-20 safe-area-bottom" style="">
 			<button class="custom-btn" type="" @click="handleScan">扫一扫</button>
 			<button class="custom-btn mt-10" @click="handleFinish">结束初始认证</button>
 		</view>

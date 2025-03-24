@@ -25,7 +25,7 @@
 				</view>
 				<image class="arrow" src="/static/image/home-arrow@2x.png" mode=""></image>
 			</view>
-			<view class="content-item d-f bg_white ai-c pl-48 pr-32 mb-32" @click="pageTo('/pages/auth/index')">
+			<view class="content-item d-f bg_white ai-c pl-48 pr-32 mb-32" @click="pageTo('/pages/delivery/index')">
 				<image class="home-icon" src="/static/image/home-delivery@2x.png" mode="aspectFit"></image>
 				<view class="flex-1 ml-48">
 					<view class="fs-36">
