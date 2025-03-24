@@ -13,18 +13,34 @@
 			  </template>
 			  <template v-if="errorType == 3">
 			  	<image class="error-image" src="/static/image/auth-error-3@2x.png" mode=""></image>
-			  	<text class="error-title fs-36">型号核实有误</text>
+			  	<text class="error-title fs-36">疑品包装</text>
 			  	<text class="error-desc fs-28 color-subTitlle">请将疑品包装取出，进行损坏申报</text>
 			  </template>
-		      <button class="custom-btn verify-btn">继续初始认证</button>
+		      <button class="custom-btn verify-btn" @click="navigatorBack()">继续初始认证</button>
 		    </view>
 	</view>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-
+import {
+		onLoad
+	} from "@dcloudio/uni-app";
 	const errorType = ref(1)
+	onLoad((option) => {
+		console.log(option)
+		let data = option;
+		errorType.value = data.errorType
+	})
+	const navigatorBack = ()=>{
+		if(errorType.value == 3){
+			uni.navigateBack({
+				delta:3
+			})
+			return
+		}
+		uni.navigateBack()
+	}
 </script>
 
 <style lang="scss">

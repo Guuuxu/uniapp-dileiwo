@@ -24,7 +24,7 @@
 <script setup>
 	const goCheck = () => {
 		uni.navigateTo({
-			url: '/pages/auth/check'
+			url: '/pages/auth/check?',
 		})
 	}
 </script>

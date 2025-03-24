@@ -47,6 +47,11 @@
     "nvueCompiler": "uni-app",
     "nvueStyleCompiler": "uni-app",
     "compilerVersion": 3,
+    "safearea": {
+      "bottom": {
+        "offset": "auto"
+      }
+    },
     "distribute": {
       "orientation": [
         "portrait-primary"
@@ -121,12 +126,6 @@
       "background": "#FFFFFF"
     },
     "allowsInlineMediaPlayback": true,
-    "safearea": {
-      "background": "#F8F8F8",
-      "bottom": {
-        "offset": "auto"
-      }
-    },
     "uni-app": {
       "control": "uni-v3",
       "vueVersion": "3",
@@ -154,42 +153,38 @@
       "list": [
         {
           "pagePath": "pages/auth/index",
-          "iconPath": "/static/component.png",
-          "selectedIconPath": "/static/componentHL.png",
+          "iconPath": "/static/image/tabbar-auth-active@2x.png",
+          "selectedIconPath": "/static/image/tabbar-auth-active@2x.png",
           "text": "初始认证"
         },
         {
           "pagePath": "pages/delivery/index",
-          "iconPath": "/static/api.png",
-          "selectedIconPath": "/static/apiHL.png",
+          "iconPath": "/static/image/tabbar-delivery@2x.png",
+          "selectedIconPath": "/static/image/tabbar-delivery@2x.png",
           "text": "包装出库"
         },
         {
           "pagePath": "pages/index/index",
-          "iconPath": "/static/extui.png",
-          "selectedIconPath": "/static/extuiHL.png",
+          "iconPath": "/static/image/tabbar-home-active@2x.png",
+          "selectedIconPath": "/static/image/tabbar-home-active@2x.png",
           "text": " "
         },
         {
           "pagePath": "pages/recycle/detailList",
-          "iconPath": "/static/template.png",
-          "selectedIconPath": "/static/templateHL.png",
+          "iconPath": "/static/image/tabbar-recycle@2x.png",
+          "selectedIconPath": "/static/image/tabbar-recycle@2x.png",
           "text": "回收复查"
         },
         {
           "pagePath": "pages/report/index",
-          "iconPath": "/static/template.png",
-          "selectedIconPath": "/static/templateHL.png",
+          "iconPath": "/static/image/tabbar-report@2x.png",
+          "selectedIconPath": "/static/image/tabbar-report@2x.png",
           "text": "损坏申报"
         }
       ],
       "backgroundColor": "#F8F8F8",
       "selectedIndex": 0,
-      "shown": true,
-      "child": [
-        "lauchwebview"
-      ],
-      "selected": 2
+      "shown": true
     }
   },
   "app-harmony": {

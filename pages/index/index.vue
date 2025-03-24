@@ -62,7 +62,7 @@
 
 <script setup>
 	const pageTo = (url) =>{
-		uni.navigateTo({
+		uni.switchTab({
 			url:url
 		})
 	}

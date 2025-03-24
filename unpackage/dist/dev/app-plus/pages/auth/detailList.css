@@ -31,3 +31,9 @@
   border-bottom: 0.0625rem solid #F6F7F8;
   height: 3.375rem;
 }
+.footer[data-v-9ed9ae8a] {
+  padding-bottom: constant(safe-area-inset-bottom);
+  /*兼容 IOS<11.2*/
+  padding-bottom: env(safe-area-inset-bottom);
+  /*兼容 IOS>11.2*/
+}

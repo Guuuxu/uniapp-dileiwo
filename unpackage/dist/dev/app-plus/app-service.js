@@ -43,12 +43,12 @@ if (uni.restoreGlobal) {
     }
     return target;
   };
-  const _sfc_main$w = {
+  const _sfc_main$v = {
     __name: "index",
     setup(__props, { expose: __expose }) {
       __expose();
       const pageTo = (url) => {
-        uni.navigateTo({
+        uni.switchTab({
           url
         });
       };
@@ -57,7 +57,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   };
-  function _sfc_render$v(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$u(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "home-container" }, [
       vue.createElementVNode("view", { class: "header pl-32 pr-32" }, [
         vue.createElementVNode("view", { class: "fs-28" }, " 云耕智能科技有限公司 "),
@@ -139,7 +139,7 @@ if (uni.restoreGlobal) {
       ])
     ]);
   }
-  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["render", _sfc_render$v], ["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/project/dileiwo-app/pages/index/index.vue"]]);
+  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$u], ["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/project/dileiwo-app/pages/index/index.vue"]]);
   function formatAppLog(type, filename, ...args) {
     if (uni.__log__) {
       uni.__log__(type, filename, ...args);
@@ -800,7 +800,7 @@ if (uni.restoreGlobal) {
     const reg = /^[0-9]*$/g;
     return typeof val === "number" || reg.test(val) ? val + "px" : val;
   };
-  const _sfc_main$v = {
+  const _sfc_main$u = {
     name: "UniIcons",
     emits: ["click"],
     props: {
@@ -854,7 +854,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$u(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "text",
       {
@@ -869,8 +869,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$5 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$u], ["__scopeId", "data-v-d31e1c47"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
-  const _sfc_main$u = {
+  const __easycom_0$5 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$t], ["__scopeId", "data-v-d31e1c47"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
+  const _sfc_main$t = {
     name: "UniCard",
     emits: ["click"],
     props: {
@@ -931,7 +931,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$s(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -1032,7 +1032,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$t], ["__scopeId", "data-v-ae4bee67"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
+  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$s], ["__scopeId", "data-v-ae4bee67"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
   const leftWindow = {
     path: "windows/left-window.vue",
     style: {
@@ -1212,12 +1212,6 @@ if (uni.restoreGlobal) {
           }
         },
         {
-          path: "scan-code/scan-code",
-          style: {
-            navigationBarTitleText: "扫码"
-          }
-        },
-        {
           path: "clipboard/clipboard",
           style: {
             navigationBarTitleText: "剪贴板"
@@ -1269,32 +1263,32 @@ if (uni.restoreGlobal) {
     list: [
       {
         pagePath: "pages/auth/index",
-        iconPath: "static/component.png",
-        selectedIconPath: "static/componentHL.png",
+        iconPath: "static/image/tabbar-auth-active@2x.png",
+        selectedIconPath: "static/image/tabbar-auth-active@2x.png",
         text: "初始认证"
       },
       {
         pagePath: "pages/delivery/index",
-        iconPath: "static/api.png",
-        selectedIconPath: "static/apiHL.png",
+        iconPath: "static/image/tabbar-delivery@2x.png",
+        selectedIconPath: "static/image/tabbar-delivery@2x.png",
         text: "包装出库"
       },
       {
         pagePath: "pages/index/index",
-        iconPath: "static/extui.png",
-        selectedIconPath: "static/extuiHL.png",
+        iconPath: "static/image/tabbar-home-active@2x.png",
+        selectedIconPath: "static/image/tabbar-home-active@2x.png",
         text: " "
       },
       {
         pagePath: "pages/recycle/detailList",
-        iconPath: "static/template.png",
-        selectedIconPath: "static/templateHL.png",
+        iconPath: "static/image/tabbar-recycle@2x.png",
+        selectedIconPath: "static/image/tabbar-recycle@2x.png",
         text: "回收复查"
       },
       {
         pagePath: "pages/report/index",
-        iconPath: "static/template.png",
-        selectedIconPath: "static/templateHL.png",
+        iconPath: "static/image/tabbar-report@2x.png",
+        selectedIconPath: "static/image/tabbar-report@2x.png",
         text: "损坏申报"
       }
     ]
@@ -4471,7 +4465,7 @@ ${o3}
   const {
     t
   } = initVueI18n(messages);
-  const _sfc_main$t = {
+  const _sfc_main$s = {
     name: "UniLoadMore",
     emits: ["clickLoadMore"],
     props: {
@@ -4553,7 +4547,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$s(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$r(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: "uni-load-more",
       onClick: _cache[0] || (_cache[0] = (...args) => $options.onClick && $options.onClick(...args))
@@ -4628,8 +4622,8 @@ ${o3}
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$s], ["__scopeId", "data-v-9245e42c"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue"]]);
-  const _sfc_main$s = {
+  const __easycom_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$r], ["__scopeId", "data-v-9245e42c"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue"]]);
+  const _sfc_main$r = {
     name: "uniDataChecklist",
     mixins: [er.mixinDatacom || {}],
     emits: ["input", "update:modelValue", "change"],
@@ -4976,7 +4970,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$r(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_load_more = resolveEasycom(vue.resolveDynamicComponent("uni-load-more"), __easycom_0$4);
     return vue.openBlock(), vue.createElementBlock(
       "view",
@@ -5189,7 +5183,7 @@ ${o3}
       /* STYLE */
     );
   }
-  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$r], ["__scopeId", "data-v-2f788efd"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox.vue"]]);
+  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$q], ["__scopeId", "data-v-2f788efd"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox.vue"]]);
   class MPAnimation {
     constructor(options, _this) {
       this.options = options;
@@ -5302,7 +5296,7 @@ ${o3}
     clearTimeout(_this.timer);
     return new MPAnimation(option, _this);
   }
-  const _sfc_main$r = {
+  const _sfc_main$q = {
     name: "uniTransition",
     emits: ["click", "change"],
     props: {
@@ -5553,7 +5547,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.withDirectives((vue.openBlock(), vue.createElementBlock("view", {
       ref: "ani",
       animation: $data.animationData,
@@ -5566,8 +5560,8 @@ ${o3}
       [vue.vShow, $data.isShow]
     ]);
   }
-  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$q], ["__file", "E:/project/dileiwo-app/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
-  const _sfc_main$q = {
+  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$p], ["__file", "E:/project/dileiwo-app/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
+  const _sfc_main$p = {
     name: "uniPopup",
     components: {},
     emits: ["change", "maskClick"],
@@ -5920,7 +5914,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_transition = resolveEasycom(vue.resolveDynamicComponent("uni-transition"), __easycom_0$3);
     return $data.showPopup ? (vue.openBlock(), vue.createElementBlock(
       "view",
@@ -5980,7 +5974,7 @@ ${o3}
       /* CLASS */
     )) : vue.createCommentVNode("v-if", true);
   }
-  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$p], ["__scopeId", "data-v-4dd3c44b"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
+  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$o], ["__scopeId", "data-v-4dd3c44b"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
   var isIOS;
   function album() {
     var result = 0;
@@ -6210,7 +6204,7 @@ ${o3}
     gotoAppSetting: gotoAppPermissionSetting
   };
   const sourceTypeIndex = 2;
-  const _sfc_main$p = {
+  const _sfc_main$o = {
     __name: "index",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -6321,7 +6315,7 @@ ${o3}
       return __returned__;
     }
   };
-  function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$5);
     const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_1$1);
     const _component_uni_data_checkbox = resolveEasycom(vue.resolveDynamicComponent("uni-data-checkbox"), __easycom_2);
@@ -6494,8 +6488,8 @@ ${o3}
       )
     ]);
   }
-  const PagesReportIndex = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$o], ["__scopeId", "data-v-14542b8b"], ["__file", "E:/project/dileiwo-app/pages/report/index.vue"]]);
-  const _sfc_main$o = {
+  const PagesReportIndex = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$n], ["__scopeId", "data-v-14542b8b"], ["__file", "E:/project/dileiwo-app/pages/report/index.vue"]]);
+  const _sfc_main$n = {
     __name: "index",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -6510,7 +6504,7 @@ ${o3}
       return __returned__;
     }
   };
-  function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "auth-container" }, [
       vue.createElementVNode("scroll-view", null, [
         vue.createElementVNode("view", {
@@ -6531,8 +6525,8 @@ ${o3}
       ])
     ]);
   }
-  const PagesDeliveryIndex = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$n], ["__scopeId", "data-v-87751f05"], ["__file", "E:/project/dileiwo-app/pages/delivery/index.vue"]]);
-  const _sfc_main$n = {
+  const PagesDeliveryIndex = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$m], ["__scopeId", "data-v-87751f05"], ["__file", "E:/project/dileiwo-app/pages/delivery/index.vue"]]);
+  const _sfc_main$m = {
     __name: "detailList",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -6556,7 +6550,7 @@ ${o3}
       return __returned__;
     }
   };
-  function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "check-container pt-16" }, [
       vue.createElementVNode("view", { class: "detail-list bg_white" }, [
         vue.createElementVNode("view", { class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28" }, [
@@ -6579,10 +6573,10 @@ ${o3}
       ])
     ]);
   }
-  const PagesDeliveryDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$m], ["__scopeId", "data-v-576bb335"], ["__file", "E:/project/dileiwo-app/pages/delivery/detailList.vue"]]);
+  const PagesDeliveryDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$l], ["__scopeId", "data-v-576bb335"], ["__file", "E:/project/dileiwo-app/pages/delivery/detailList.vue"]]);
   const _imports_0$3 = "/static/image/delivery-error-1@2x.png";
   const _imports_1$1 = "/static/image/delivery-succes-1@2x.png";
-  const _sfc_main$m = {
+  const _sfc_main$l = {
     __name: "deliveryError",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -6596,7 +6590,7 @@ ${o3}
       return __returned__;
     }
   };
-  function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "auth-error-container" }, [
       $setup.errorType == 1 ? (vue.openBlock(), vue.createElementBlock("view", {
         key: 0,
@@ -6667,8 +6661,8 @@ ${o3}
       ]))
     ]);
   }
-  const PagesDeliveryDeliveryError = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$l], ["__file", "E:/project/dileiwo-app/pages/delivery/deliveryError.vue"]]);
-  const _sfc_main$l = {
+  const PagesDeliveryDeliveryError = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$k], ["__file", "E:/project/dileiwo-app/pages/delivery/deliveryError.vue"]]);
+  const _sfc_main$k = {
     __name: "detailList",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -6692,7 +6686,7 @@ ${o3}
       return __returned__;
     }
   };
-  function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "check-container pt-16" }, [
       vue.createElementVNode("view", { class: "detail-list bg_white" }, [
         vue.createElementVNode("view", { class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28" }, [
@@ -6713,9 +6707,9 @@ ${o3}
       ])
     ]);
   }
-  const PagesRecycleDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$k], ["__scopeId", "data-v-0a052cc1"], ["__file", "E:/project/dileiwo-app/pages/recycle/detailList.vue"]]);
+  const PagesRecycleDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$j], ["__scopeId", "data-v-0a052cc1"], ["__file", "E:/project/dileiwo-app/pages/recycle/detailList.vue"]]);
   const _imports_0$2 = "/static/image/recycle-success@2x.png";
-  const _sfc_main$k = {
+  const _sfc_main$j = {
     __name: "recycleSuccess",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -6725,7 +6719,7 @@ ${o3}
       return __returned__;
     }
   };
-  function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "auth-error-container" }, [
       vue.createElementVNode("view", { class: "content" }, [
         vue.createElementVNode("image", {
@@ -6739,14 +6733,14 @@ ${o3}
       ])
     ]);
   }
-  const PagesRecycleRecycleSuccess = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$j], ["__file", "E:/project/dileiwo-app/pages/recycle/recycleSuccess.vue"]]);
-  const _sfc_main$j = {
+  const PagesRecycleRecycleSuccess = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$i], ["__file", "E:/project/dileiwo-app/pages/recycle/recycleSuccess.vue"]]);
+  const _sfc_main$i = {
     __name: "index",
     setup(__props, { expose: __expose }) {
       __expose();
       const goCheck = () => {
         uni.navigateTo({
-          url: "/pages/auth/check"
+          url: "/pages/auth/check?"
         });
       };
       const __returned__ = { goCheck };
@@ -6754,7 +6748,7 @@ ${o3}
       return __returned__;
     }
   };
-  function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "auth-container" }, [
       vue.createElementVNode("scroll-view", null, [
         vue.createElementVNode("view", {
@@ -6778,8 +6772,8 @@ ${o3}
       ])
     ]);
   }
-  const PagesAuthIndex = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$i], ["__scopeId", "data-v-3f748249"], ["__file", "E:/project/dileiwo-app/pages/auth/index.vue"]]);
-  const _sfc_main$i = {
+  const PagesAuthIndex = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__scopeId", "data-v-3f748249"], ["__file", "E:/project/dileiwo-app/pages/auth/index.vue"]]);
+  const _sfc_main$h = {
     name: "uniFormsItem",
     options: {
       virtualHost: true
@@ -7111,7 +7105,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -7167,7 +7161,7 @@ ${o3}
       /* CLASS */
     );
   }
-  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__scopeId", "data-v-462874dd"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue"]]);
+  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__scopeId", "data-v-462874dd"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue"]]);
   var pattern = {
     email: /^\S+?@\S+?\.\S+?$/,
     idcard: /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/,
@@ -7731,7 +7725,7 @@ ${o3}
       return false;
     }
   };
-  const _sfc_main$h = {
+  const _sfc_main$g = {
     name: "uniForms",
     emits: ["validate", "submit"],
     options: {
@@ -8033,15 +8027,15 @@ ${o3}
       _isEqual: isEqual
     }
   };
-  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-forms" }, [
       vue.createElementVNode("form", null, [
         vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
       ])
     ]);
   }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__scopeId", "data-v-9a1e3c32"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-forms/components/uni-forms/uni-forms.vue"]]);
-  const _sfc_main$g = {
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-9a1e3c32"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-forms/components/uni-forms/uni-forms.vue"]]);
+  const _sfc_main$f = {
     __name: "check",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -8061,13 +8055,16 @@ ${o3}
         formData.value.quantity = e2.detail.value;
       };
       const handleNext = () => {
+        uni.navigateTo({
+          url: "/pages/auth/detailList?formData=" + JSON.stringify(formData.value)
+        });
       };
       const __returned__ = { formData, changeCategory, changeQuantity, changeAmbiguity, handleNext, ref: vue.ref };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   };
-  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_forms_item = resolveEasycom(vue.resolveDynamicComponent("uni-forms-item"), __easycom_0$2);
     const _component_uni_forms = resolveEasycom(vue.resolveDynamicComponent("uni-forms"), __easycom_1);
     return vue.openBlock(), vue.createElementBlock("view", { class: "check-container" }, [
@@ -8188,32 +8185,77 @@ ${o3}
       ])
     ]);
   }
-  const PagesAuthCheck = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-f0ba12bd"], ["__file", "E:/project/dileiwo-app/pages/auth/check.vue"]]);
-  const _sfc_main$f = {
+  const PagesAuthCheck = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-f0ba12bd"], ["__file", "E:/project/dileiwo-app/pages/auth/check.vue"]]);
+  const _sfc_main$e = {
     __name: "detailList",
     setup(__props, { expose: __expose }) {
       __expose();
+      const safeArea = vue.ref({});
+      uni.getSystemInfo({
+        success: (res2) => {
+          formatAppLog("log", "at pages/auth/detailList.vue:50", res2.platform);
+          if (res2.platform === "android") {
+            formatAppLog("log", "at pages/auth/detailList.vue:53", res2);
+            safeArea.value = {
+              top: res2.statusBarHeight,
+              // 可以获取更多安全区域的数据，如下
+              bottom: res2.safeArea.bottom
+            };
+          } else if (res2.platform === "ios") {
+            safeArea.value = {
+              top: res2.statusBarHeight,
+              // 可以获取更多安全区域的数据，如下
+              bottom: res2.safeAreaInsets.bottom
+            };
+          }
+          formatAppLog("log", "at pages/auth/detailList.vue:66", safeArea.value);
+        }
+      });
       const formData = vue.ref({
         isCateCorrect: ""
       });
-      const changeCategory = (e2) => {
-        formatAppLog("log", "at pages/auth/detailList.vue:47", e2);
-        formData.value.isCateCorrect = e2.detail.value;
+      const list = vue.ref([]);
+      const handleScan = async () => {
+        let status = await checkPermission();
+        if (status !== 1) {
+          return;
+        }
+        uni.scanCode({
+          success: (res2) => {
+            list.value.push({
+              packageType: res2.result,
+              status: 1
+            });
+          },
+          fail: (err) => {
+          }
+        });
       };
-      const changeQuantity = (e2) => {
-        formatAppLog("log", "at pages/auth/detailList.vue:51", e2);
-        formData.value.quantity = e2.detail.value;
+      const checkPermission = async (code) => {
+        let status = permission.isIOS ? await permission.requestIOS("camera") : await permission.requestAndroid("android.permission.CAMERA");
+        if (status === null || status === 1) {
+          status = 1;
+        } else {
+          uni.showModal({
+            content: "需要相机权限",
+            confirmText: "设置",
+            success: function(res2) {
+              if (res2.confirm) {
+                permission.gotoAppSetting();
+              }
+            }
+          });
+        }
+        return status;
       };
-      const changeAmbiguity = (e2) => {
-        formatAppLog("log", "at pages/auth/detailList.vue:55", e2);
-        formData.value.quantity = e2.detail.value;
-      };
-      const __returned__ = { formData, changeCategory, changeQuantity, changeAmbiguity, ref: vue.ref };
+      const __returned__ = { safeArea, formData, list, handleScan, checkPermission, get permision() {
+        return permission;
+      }, ref: vue.ref };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   };
-  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "check-container pt-16" }, [
       vue.createElementVNode("view", { class: "detail-list bg_white" }, [
         vue.createElementVNode("view", { class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28" }, [
@@ -8224,21 +8266,46 @@ ${o3}
           vue.createElementVNode("view", { class: "title" }, " 顺丰#SFxnv00927 "),
           vue.createElementVNode("view", { class: "sub uni-error" }, " 型号错误 ")
         ]),
-        vue.createElementVNode("view", { class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28" }, [
-          vue.createElementVNode("view", { class: "title" }, " 顺丰#SFxnv00927 "),
-          vue.createElementVNode("view", { class: "sub uni-success" }, " 认证成功 ")
-        ])
+        (vue.openBlock(true), vue.createElementBlock(
+          vue.Fragment,
+          null,
+          vue.renderList($setup.list, (item, index2) => {
+            return vue.openBlock(), vue.createElementBlock("view", {
+              class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28",
+              key: index2
+            }, [
+              vue.createElementVNode(
+                "view",
+                { class: "title" },
+                vue.toDisplayString(item.packageType),
+                1
+                /* TEXT */
+              ),
+              vue.createElementVNode("view", { class: "sub uni-success" }, " 认证成功 ")
+            ]);
+          }),
+          128
+          /* KEYED_FRAGMENT */
+        ))
       ]),
-      vue.createElementVNode("view", { class: "w_100 mt-48" }, [
-        vue.createElementVNode("button", { class: "custom-btn" }, "下一步")
+      vue.createElementVNode("view", {
+        class: "footer w_100 mt-48 fixed safe-area-bottom pb-20",
+        style: {}
+      }, [
+        vue.createElementVNode("button", {
+          class: "custom-btn",
+          type: "",
+          onClick: $setup.handleScan
+        }, "扫一扫"),
+        vue.createElementVNode("button", { class: "custom-btn mt-10" }, "结束初始认证")
       ])
     ]);
   }
-  const PagesAuthDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-9ed9ae8a"], ["__file", "E:/project/dileiwo-app/pages/auth/detailList.vue"]]);
+  const PagesAuthDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-9ed9ae8a"], ["__file", "E:/project/dileiwo-app/pages/auth/detailList.vue"]]);
   const _imports_0$1 = "/static/image/auth-error-1@2x.png";
   const _imports_1 = "/static/image/auth-error-2@2x.png";
   const _imports_2 = "/static/image/auth-error-3@2x.png";
-  const _sfc_main$e = {
+  const _sfc_main$d = {
     __name: "authError",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -8248,7 +8315,7 @@ ${o3}
       return __returned__;
     }
   };
-  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "auth-error-container" }, [
       vue.createElementVNode("view", { class: "content" }, [
         $setup.errorType == 1 ? (vue.openBlock(), vue.createElementBlock(
@@ -8308,7 +8375,7 @@ ${o3}
       ])
     ]);
   }
-  const PagesAuthAuthError = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__file", "E:/project/dileiwo-app/pages/auth/authError.vue"]]);
+  const PagesAuthAuthError = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__file", "E:/project/dileiwo-app/pages/auth/authError.vue"]]);
   function obj2strClass(obj) {
     let classess = "";
     for (let key in obj) {
@@ -8327,7 +8394,7 @@ ${o3}
     }
     return style;
   }
-  const _sfc_main$d = {
+  const _sfc_main$c = {
     name: "uni-easyinput",
     emits: [
       "click",
@@ -8684,7 +8751,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$5);
     return vue.openBlock(), vue.createElementBlock(
       "view",
@@ -8809,8 +8876,8 @@ ${o3}
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__scopeId", "data-v-09fd5285"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue"]]);
-  const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__scopeId", "data-v-09fd5285"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue"]]);
+  const _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
     __name: "login",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -8928,7 +8995,7 @@ ${o3}
       return __returned__;
     }
   });
-  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_0$1);
     return vue.openBlock(), vue.createElementBlock("view", { class: "container h_100" }, [
       $setup.step === 1 ? (vue.openBlock(), vue.createElementBlock("view", {
@@ -9029,8 +9096,8 @@ ${o3}
       ))
     ]);
   }
-  const PagesLoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__file", "E:/project/dileiwo-app/pages/login/login.vue"]]);
-  const _sfc_main$b = {
+  const PagesLoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__file", "E:/project/dileiwo-app/pages/login/login.vue"]]);
+  const _sfc_main$a = {
     name: "page-head",
     props: {
       title: {
@@ -9039,7 +9106,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "common-page-head" }, [
       vue.createElementVNode(
         "view",
@@ -9050,16 +9117,16 @@ ${o3}
       )
     ]);
   }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__file", "E:/project/dileiwo-app/components/page-head/page-head.vue"]]);
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__file", "E:/project/dileiwo-app/components/page-head/page-head.vue"]]);
   const _imports_0 = "/static/uni.png";
-  const _sfc_main$a = {
+  const _sfc_main$9 = {
     data() {
       return {
         title: "image"
       };
     }
   };
-  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_page_head = resolveEasycom(vue.resolveDynamicComponent("page-head"), __easycom_0);
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createVNode(_component_page_head, { title: $data.title }, null, 8, ["title"]),
@@ -9095,7 +9162,7 @@ ${o3}
       ])
     ]);
   }
-  const PagesComponentImageImage = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__file", "E:/project/dileiwo-app/pages/component/image/image.vue"]]);
+  const PagesComponentImageImage = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__file", "E:/project/dileiwo-app/pages/component/image/image.vue"]]);
   function getDevtoolsGlobalHook$1() {
     return getTarget$1().__VUE_DEVTOOLS_GLOBAL_HOOK__;
   }
@@ -10429,7 +10496,7 @@ ${o3}
     createLogger
   };
   const univerifyInfoKey = "univerifyInfo";
-  const _sfc_main$9 = {
+  const _sfc_main$8 = {
     data() {
       return {
         title: "login",
@@ -10642,7 +10709,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_page_head = resolveEasycom(vue.resolveDynamicComponent("page-head"), __easycom_0);
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createVNode(_component_page_head, { title: $data.title }, null, 8, ["title"]),
@@ -10708,8 +10775,8 @@ ${o3}
       ])
     ]);
   }
-  const PagesAPILoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__file", "E:/project/dileiwo-app/pages/API/login/login.vue"]]);
-  const _sfc_main$8 = {
+  const PagesAPILoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__file", "E:/project/dileiwo-app/pages/API/login/login.vue"]]);
+  const _sfc_main$7 = {
     data() {
       return {
         title: "SubNvue",
@@ -10782,7 +10849,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_page_head = resolveEasycom(vue.resolveDynamicComponent("page-head"), __easycom_0);
     return vue.openBlock(), vue.createElementBlock("view", { class: "content" }, [
       vue.createVNode(_component_page_head, { title: $data.title }, null, 8, ["title"]),
@@ -10818,8 +10885,8 @@ ${o3}
       ])
     ]);
   }
-  const PagesAPISubnvueSubnvue = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__file", "E:/project/dileiwo-app/pages/API/subnvue/subnvue.vue"]]);
-  const _sfc_main$7 = {
+  const PagesAPISubnvueSubnvue = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__file", "E:/project/dileiwo-app/pages/API/subnvue/subnvue.vue"]]);
+  const _sfc_main$6 = {
     data() {
       return {
         title: "getUserInfo",
@@ -10906,7 +10973,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_page_head = resolveEasycom(vue.resolveDynamicComponent("page-head"), __easycom_0);
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createVNode(_component_page_head, { title: $data.title }, null, 8, ["title"]),
@@ -10956,8 +11023,8 @@ ${o3}
       ])
     ]);
   }
-  const PagesAPIGetUserInfoGetUserInfo = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__file", "E:/project/dileiwo-app/pages/API/get-user-info/get-user-info.vue"]]);
-  const _sfc_main$6 = {
+  const PagesAPIGetUserInfoGetUserInfo = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__file", "E:/project/dileiwo-app/pages/API/get-user-info/get-user-info.vue"]]);
+  const _sfc_main$5 = {
     data() {
       return {
         title: "下拉刷新 + 加载更多",
@@ -11012,7 +11079,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_page_head = resolveEasycom(vue.resolveDynamicComponent("page-head"), __easycom_0);
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createVNode(_component_page_head, { title: $data.title }, null, 8, ["title"]),
@@ -11049,77 +11116,7 @@ ${o3}
       ])
     ]);
   }
-  const PagesAPIPullDownRefreshPullDownRefresh = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__file", "E:/project/dileiwo-app/pages/API/pull-down-refresh/pull-down-refresh.vue"]]);
-  const _sfc_main$5 = {
-    data() {
-      return {
-        title: "scanCode",
-        result: ""
-      };
-    },
-    methods: {
-      async scan() {
-        let status = await this.checkPermission();
-        if (status !== 1) {
-          return;
-        }
-        uni.scanCode({
-          success: (res2) => {
-            this.result = res2.result;
-          },
-          fail: (err) => {
-          }
-        });
-      },
-      async checkPermission(code) {
-        let status = permission.isIOS ? await permission.requestIOS("camera") : await permission.requestAndroid("android.permission.CAMERA");
-        if (status === null || status === 1) {
-          status = 1;
-        } else {
-          uni.showModal({
-            content: "需要相机权限",
-            confirmText: "设置",
-            success: function(res2) {
-              if (res2.confirm) {
-                permission.gotoAppSetting();
-              }
-            }
-          });
-        }
-        return status;
-      }
-    }
-  };
-  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_page_head = resolveEasycom(vue.resolveDynamicComponent("page-head"), __easycom_0);
-    return vue.openBlock(), vue.createElementBlock("view", null, [
-      vue.createVNode(_component_page_head, { title: $data.title }, null, 8, ["title"]),
-      vue.createElementVNode("view", { class: "uni-padding-wrap uni-common-mt" }, [
-        vue.createElementVNode("view", { class: "uni-title" }, "扫码结果："),
-        $data.result ? (vue.openBlock(), vue.createElementBlock("view", {
-          key: 0,
-          class: "uni-list"
-        }, [
-          vue.createElementVNode("view", { class: "uni-cell" }, [
-            vue.createElementVNode(
-              "view",
-              { class: "scan-result" },
-              vue.toDisplayString($data.result),
-              1
-              /* TEXT */
-            )
-          ])
-        ])) : vue.createCommentVNode("v-if", true),
-        vue.createElementVNode("view", { class: "uni-btn-v" }, [
-          vue.createElementVNode("button", {
-            type: "primary",
-            onClick: _cache[0] || (_cache[0] = (...args) => $options.scan && $options.scan(...args))
-          }, "扫一扫")
-        ])
-      ])
-    ]);
-  }
-  const PagesAPIScanCodeScanCode = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__file", "E:/project/dileiwo-app/pages/API/scan-code/scan-code.vue"]]);
+  const PagesAPIPullDownRefreshPullDownRefresh = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__file", "E:/project/dileiwo-app/pages/API/pull-down-refresh/pull-down-refresh.vue"]]);
   const _sfc_main$4 = {
     data() {
       return {
@@ -11730,7 +11727,6 @@ ${o3}
   __definePage("pages/API/subnvue/subnvue", PagesAPISubnvueSubnvue);
   __definePage("pages/API/get-user-info/get-user-info", PagesAPIGetUserInfoGetUserInfo);
   __definePage("pages/API/pull-down-refresh/pull-down-refresh", PagesAPIPullDownRefreshPullDownRefresh);
-  __definePage("pages/API/scan-code/scan-code", PagesAPIScanCodeScanCode);
   __definePage("pages/API/clipboard/clipboard", PagesAPIClipboardClipboard);
   __definePage("pages/API/request/request", PagesAPIRequestRequest);
   __definePage("pages/API/image/image", PagesAPIImageImage);
@@ -13606,7 +13602,7 @@ This will fail in production if not fixed.`);
     storeToRefs
   }, Symbol.toStringTag, { value: "Module" }));
   var define_process_env_UNI_STATISTICS_CONFIG_default = { version: "2", enable: true };
-  var define_process_env_UNI_STAT_TITLE_JSON_default = { "pages/report/index": "损坏申报", "pages/delivery/index": "选择出货单号", "pages/delivery/detailList": "明细列表", "pages/recycle/detailList": "明细列表", "pages/auth/index": "请选择认证单号", "pages/auth/check": "包装核对讯息", "pages/auth/detailList": "明细列表", "pages/component/image/image": "image", "pages/API/login/login": "授权登录", "pages/API/subnvue/subnvue": "原生子窗体", "pages/API/get-user-info/get-user-info": "获取用户信息", "pages/API/pull-down-refresh/pull-down-refresh": "下拉刷新", "pages/API/scan-code/scan-code": "扫码", "pages/API/clipboard/clipboard": "剪贴板", "pages/API/request/request": "网络请求", "pages/API/image/image": "图片", "pages/API/storage/storage": "数据存储" };
+  var define_process_env_UNI_STAT_TITLE_JSON_default = { "pages/API/scan-code/scan-code": "扫码", "pages/report/index": "损坏申报", "pages/delivery/index": "选择出货单号", "pages/delivery/detailList": "明细列表", "pages/recycle/detailList": "明细列表", "pages/auth/index": "请选择认证单号", "pages/auth/check": "包装核对讯息", "pages/auth/detailList": "明细列表", "pages/component/image/image": "image", "pages/API/login/login": "授权登录", "pages/API/subnvue/subnvue": "原生子窗体", "pages/API/get-user-info/get-user-info": "获取用户信息", "pages/API/pull-down-refresh/pull-down-refresh": "下拉刷新", "pages/API/clipboard/clipboard": "剪贴板", "pages/API/request/request": "网络请求", "pages/API/image/image": "图片", "pages/API/storage/storage": "数据存储" };
   var define_process_env_UNI_STAT_UNI_CLOUD_default = {};
   const sys = uni.getSystemInfoSync();
   const STAT_VERSION = "4.45";

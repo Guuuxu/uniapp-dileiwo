@@ -63,7 +63,9 @@ import { ref } from 'vue';
 	
 	// 下一步
 	const handleNext = () =>{
-		
+		uni.navigateTo({
+			url: '/pages/auth/detailList?formData=' + JSON.stringify(formData.value)
+		})
 	}
 </script>
 
