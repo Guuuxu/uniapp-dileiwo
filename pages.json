@@ -93,7 +93,13 @@
 				"navigationBarBackgroundColor": "#FFFFFF"
 			}
 		},
-
+{
+			"path": "pages/report/reportSuccess",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
 		{
 			"path": "pages/login/login",
 			"style": {
@@ -249,7 +255,7 @@
 			},
 			{
 				"pagePath": "pages/delivery/index",
-				"iconPath": "static/image/tabbar-delivery-active@2x.png",
+				"iconPath": "static/image/tabbar-delivery@2x.png",
 				"selectedIconPath": "static/image/tabbar-delivery-active@2x.png",
 				"text": "包装出库"
 			}, {

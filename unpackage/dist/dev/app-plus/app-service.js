@@ -31,8 +31,8 @@ if (uni.restoreGlobal) {
 }
 (function(vue) {
   "use strict";
-  const _imports_0$5 = "/static/image/home-auth@2x.png";
-  const _imports_0$4 = "/static/image/home-arrow@2x.png";
+  const _imports_0$6 = "/static/image/home-auth@2x.png";
+  const _imports_0$5 = "/static/image/home-arrow@2x.png";
   const _imports_2$1 = "/static/image/home-delivery@2x.png";
   const _imports_3 = "/static/image/home-search@2x.png";
   const _imports_4 = "/static/image/home-damage@2x.png";
@@ -43,7 +43,7 @@ if (uni.restoreGlobal) {
     }
     return target;
   };
-  const _sfc_main$v = {
+  const _sfc_main$w = {
     __name: "index",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -57,7 +57,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   };
-  function _sfc_render$u(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$v(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "home-container" }, [
       vue.createElementVNode("view", { class: "header pl-32 pr-32" }, [
         vue.createElementVNode("view", { class: "fs-28" }, " 云耕智能科技有限公司 "),
@@ -72,7 +72,7 @@ if (uni.restoreGlobal) {
         }, [
           vue.createElementVNode("image", {
             class: "home-icon",
-            src: _imports_0$5,
+            src: _imports_0$6,
             mode: "aspectFit"
           }),
           vue.createElementVNode("view", { class: "flex-1 ml-48" }, [
@@ -81,13 +81,13 @@ if (uni.restoreGlobal) {
           ]),
           vue.createElementVNode("image", {
             class: "arrow",
-            src: _imports_0$4,
+            src: _imports_0$5,
             mode: ""
           })
         ]),
         vue.createElementVNode("view", {
           class: "content-item d-f bg_white ai-c pl-48 pr-32 mb-32",
-          onClick: _cache[1] || (_cache[1] = ($event) => $setup.pageTo("/pages/auth/index"))
+          onClick: _cache[1] || (_cache[1] = ($event) => $setup.pageTo("/pages/delivery/index"))
         }, [
           vue.createElementVNode("image", {
             class: "home-icon",
@@ -100,11 +100,14 @@ if (uni.restoreGlobal) {
           ]),
           vue.createElementVNode("image", {
             class: "arrow",
-            src: _imports_0$4,
+            src: _imports_0$5,
             mode: ""
           })
         ]),
-        vue.createElementVNode("view", { class: "content-item d-f bg_white ai-c pl-48 pr-32 mb-32" }, [
+        vue.createElementVNode("view", {
+          class: "content-item d-f bg_white ai-c pl-48 pr-32 mb-32",
+          onClick: _cache[2] || (_cache[2] = ($event) => $setup.pageTo("/pages/recycle/detailList"))
+        }, [
           vue.createElementVNode("image", {
             class: "home-icon",
             src: _imports_3,
@@ -116,7 +119,7 @@ if (uni.restoreGlobal) {
           ]),
           vue.createElementVNode("image", {
             class: "arrow",
-            src: _imports_0$4,
+            src: _imports_0$5,
             mode: ""
           })
         ]),
@@ -132,14 +135,15 @@ if (uni.restoreGlobal) {
           ]),
           vue.createElementVNode("image", {
             class: "arrow",
-            src: _imports_0$4,
+            src: _imports_0$5,
             mode: ""
           })
         ])
       ])
     ]);
   }
-  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$u], ["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/project/dileiwo-app/pages/index/index.vue"]]);
+  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["render", _sfc_render$v], ["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/project/dileiwo-app/pages/index/index.vue"]]);
+  const ON_LOAD = "onLoad";
   function formatAppLog(type, filename, ...args) {
     if (uni.__log__) {
       uni.__log__(type, filename, ...args);
@@ -150,6 +154,10 @@ if (uni.restoreGlobal) {
   function resolveEasycom(component, easycom) {
     return typeof component === "string" ? easycom : component;
   }
+  const createHook = (lifecycle) => (hook, target = vue.getCurrentInstance()) => {
+    !vue.isInSSRComponentSetup && vue.injectHook(lifecycle, hook, target);
+  };
+  const onLoad = /* @__PURE__ */ createHook(ON_LOAD);
   const fontData = [
     {
       "font_class": "arrow-down",
@@ -800,7 +808,7 @@ if (uni.restoreGlobal) {
     const reg = /^[0-9]*$/g;
     return typeof val === "number" || reg.test(val) ? val + "px" : val;
   };
-  const _sfc_main$u = {
+  const _sfc_main$v = {
     name: "UniIcons",
     emits: ["click"],
     props: {
@@ -854,7 +862,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$u(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "text",
       {
@@ -869,8 +877,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$5 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$t], ["__scopeId", "data-v-d31e1c47"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
-  const _sfc_main$t = {
+  const __easycom_0$5 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$u], ["__scopeId", "data-v-d31e1c47"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
+  const _sfc_main$u = {
     name: "UniCard",
     emits: ["click"],
     props: {
@@ -931,7 +939,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$s(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -1032,7 +1040,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$s], ["__scopeId", "data-v-ae4bee67"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
+  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$t], ["__scopeId", "data-v-ae4bee67"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
   const leftWindow = {
     path: "windows/left-window.vue",
     style: {
@@ -1121,6 +1129,13 @@ if (uni.restoreGlobal) {
     },
     {
       path: "pages/auth/authError",
+      style: {
+        navigationBarTitleText: "",
+        navigationBarBackgroundColor: "#FFFFFF"
+      }
+    },
+    {
+      path: "pages/report/reportSuccess",
       style: {
         navigationBarTitleText: "",
         navigationBarBackgroundColor: "#FFFFFF"
@@ -1263,32 +1278,32 @@ if (uni.restoreGlobal) {
     list: [
       {
         pagePath: "pages/auth/index",
-        iconPath: "static/image/tabbar-auth-active@2x.png",
+        iconPath: "static/image/tabbar-auth@2x.png",
         selectedIconPath: "static/image/tabbar-auth-active@2x.png",
         text: "初始认证"
       },
       {
         pagePath: "pages/delivery/index",
         iconPath: "static/image/tabbar-delivery@2x.png",
-        selectedIconPath: "static/image/tabbar-delivery@2x.png",
+        selectedIconPath: "static/image/tabbar-delivery-active@2x.png",
         text: "包装出库"
       },
       {
         pagePath: "pages/index/index",
         iconPath: "static/image/tabbar-home-active@2x.png",
         selectedIconPath: "static/image/tabbar-home-active@2x.png",
-        text: " "
+        text: "主页"
       },
       {
         pagePath: "pages/recycle/detailList",
         iconPath: "static/image/tabbar-recycle@2x.png",
-        selectedIconPath: "static/image/tabbar-recycle@2x.png",
+        selectedIconPath: "static/image/tabbar-recycle-active@2x.png",
         text: "回收复查"
       },
       {
         pagePath: "pages/report/index",
         iconPath: "static/image/tabbar-report@2x.png",
-        selectedIconPath: "static/image/tabbar-report@2x.png",
+        selectedIconPath: "static/image/tabbar-report-active@2x.png",
         text: "损坏申报"
       }
     ]
@@ -4465,7 +4480,7 @@ ${o3}
   const {
     t
   } = initVueI18n(messages);
-  const _sfc_main$s = {
+  const _sfc_main$t = {
     name: "UniLoadMore",
     emits: ["clickLoadMore"],
     props: {
@@ -4547,7 +4562,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$r(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$s(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: "uni-load-more",
       onClick: _cache[0] || (_cache[0] = (...args) => $options.onClick && $options.onClick(...args))
@@ -4622,8 +4637,8 @@ ${o3}
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$r], ["__scopeId", "data-v-9245e42c"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue"]]);
-  const _sfc_main$r = {
+  const __easycom_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$s], ["__scopeId", "data-v-9245e42c"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue"]]);
+  const _sfc_main$s = {
     name: "uniDataChecklist",
     mixins: [er.mixinDatacom || {}],
     emits: ["input", "update:modelValue", "change"],
@@ -4821,7 +4836,7 @@ ${o3}
        */
       getDataList(value) {
         let dataList = JSON.parse(JSON.stringify(this.range));
-        let list = [];
+        let list2 = [];
         if (this.multiple) {
           if (!Array.isArray(value)) {
             value = [];
@@ -4843,19 +4858,19 @@ ${o3}
           } else {
             item.selected = value === item[this.map.value];
           }
-          list.push(item);
+          list2.push(item);
         });
-        return this.setRange(list);
+        return this.setRange(list2);
       },
       /**
        * 处理最大最小值
        * @param {Object} list
        */
-      setRange(list) {
-        let selectList = list.filter((item) => item.selected);
+      setRange(list2) {
+        let selectList = list2.filter((item) => item.selected);
         let min = Number(this.min) || 0;
         let max = Number(this.max) || "";
-        list.forEach((item, index2) => {
+        list2.forEach((item, index2) => {
           if (this.multiple) {
             if (selectList.length <= min) {
               let have = selectList.find((val) => val[this.map.value] === item[this.map.value]);
@@ -4871,9 +4886,9 @@ ${o3}
             }
           }
           this.setStyles(item, index2);
-          list[index2] = item;
+          list2[index2] = item;
         });
-        return list;
+        return list2;
       },
       /**
        * 设置 class
@@ -4970,7 +4985,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$r(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_load_more = resolveEasycom(vue.resolveDynamicComponent("uni-load-more"), __easycom_0$4);
     return vue.openBlock(), vue.createElementBlock(
       "view",
@@ -5183,7 +5198,7 @@ ${o3}
       /* STYLE */
     );
   }
-  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$q], ["__scopeId", "data-v-2f788efd"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox.vue"]]);
+  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$r], ["__scopeId", "data-v-2f788efd"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox.vue"]]);
   class MPAnimation {
     constructor(options, _this) {
       this.options = options;
@@ -5296,7 +5311,7 @@ ${o3}
     clearTimeout(_this.timer);
     return new MPAnimation(option, _this);
   }
-  const _sfc_main$q = {
+  const _sfc_main$r = {
     name: "uniTransition",
     emits: ["click", "change"],
     props: {
@@ -5547,7 +5562,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.withDirectives((vue.openBlock(), vue.createElementBlock("view", {
       ref: "ani",
       animation: $data.animationData,
@@ -5560,8 +5575,8 @@ ${o3}
       [vue.vShow, $data.isShow]
     ]);
   }
-  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$p], ["__file", "E:/project/dileiwo-app/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
-  const _sfc_main$p = {
+  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$q], ["__file", "E:/project/dileiwo-app/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
+  const _sfc_main$q = {
     name: "uniPopup",
     components: {},
     emits: ["change", "maskClick"],
@@ -5914,7 +5929,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_transition = resolveEasycom(vue.resolveDynamicComponent("uni-transition"), __easycom_0$3);
     return $data.showPopup ? (vue.openBlock(), vue.createElementBlock(
       "view",
@@ -5974,7 +5989,7 @@ ${o3}
       /* CLASS */
     )) : vue.createCommentVNode("v-if", true);
   }
-  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$o], ["__scopeId", "data-v-4dd3c44b"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
+  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$p], ["__scopeId", "data-v-4dd3c44b"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
   var isIOS;
   function album() {
     var result = 0;
@@ -6204,10 +6219,42 @@ ${o3}
     gotoAppSetting: gotoAppPermissionSetting
   };
   const sourceTypeIndex = 2;
-  const _sfc_main$o = {
+  const _sfc_main$p = {
     __name: "index",
     setup(__props, { expose: __expose }) {
       __expose();
+      const code = vue.ref("扫一扫");
+      const handleScan = async () => {
+        let status = await checkPermission();
+        if (status !== 1) {
+          return;
+        }
+        uni.scanCode({
+          success: (res2) => {
+            formatAppLog("log", "at pages/report/index.vue:79", res2.result);
+            code.value = res2.result;
+          },
+          fail: (err) => {
+          }
+        });
+      };
+      const checkPermission = async (code2) => {
+        let status = permission.isIOS ? await permission.requestIOS("camera") : await permission.requestAndroid("android.permission.CAMERA");
+        if (status === null || status === 1) {
+          status = 1;
+        } else {
+          uni.showModal({
+            content: "需要相机权限",
+            confirmText: "设置",
+            success: function(res2) {
+              if (res2.confirm) {
+                permission.gotoAppSetting();
+              }
+            }
+          });
+        }
+        return status;
+      };
       const reasonOption = vue.ref([
         {
           text: "外观破损",
@@ -6247,40 +6294,20 @@ ${o3}
       const tempReason = vue.ref("");
       const change = (e2) => {
         var _a, _b;
-        formatAppLog("log", "at pages/report/index.vue:106", "e:", e2);
+        formatAppLog("log", "at pages/report/index.vue:147", "e:", e2);
         reason.value = (_a = e2.detail) == null ? void 0 : _a.value;
         tempReason.value = ((_b = e2.detail) == null ? void 0 : _b.data.map((item) => item.text).toString()) || "";
       };
       const imageList = vue.ref([]);
       const imageDetailList = vue.ref([]);
       const sourceType2 = ["拍照", "相册", "拍照或相册"];
-      const checkPermission = async (code) => {
-        let type = 2;
-        formatAppLog("log", "at pages/report/index.vue:117", "permision.isIOS", permission.isIOS);
-        let status = permission.isIOS ? await permission.requestIOS(sourceType2[type][0]) : await permission.requestAndroid("android.permission.READ_EXTERNAL_STORAGE");
-        formatAppLog("log", "at pages/report/index.vue:121", "status", status);
-        if (status === null || status === 1) {
-          status = 1;
-        } else {
-          uni.showModal({
-            content: "没有开启权限",
-            confirmText: "设置",
-            success: function(res2) {
-              if (res2.confirm) {
-                permission.gotoAppSetting();
-              }
-            }
-          });
-        }
-        return status;
-      };
       const handleUpload = async (index2) => {
         uni.chooseImage({
           // sourceType: sourceType[sourceTypeIndex],
           // sizeType: sizeType[this.sizeTypeIndex],
           count: 9,
           success: (res2) => {
-            formatAppLog("log", "at pages/report/index.vue:153", "chooseImage", res2.tempFilePaths);
+            formatAppLog("log", "at pages/report/index.vue:171", "chooseImage", res2.tempFilePaths);
             if (index2 === 1) {
               imageList.value = imageList.value.concat(res2.tempFilePaths);
             } else {
@@ -6288,9 +6315,9 @@ ${o3}
             }
           },
           fail: (err) => {
-            formatAppLog("log", "at pages/report/index.vue:162", "err: ", err);
+            formatAppLog("log", "at pages/report/index.vue:180", "err: ", err);
             if (err["code"] && err.code !== 0 && sourceTypeIndex === 2) {
-              formatAppLog("log", "at pages/report/index.vue:165", "checkPermission", err.code);
+              formatAppLog("log", "at pages/report/index.vue:183", "checkPermission", err.code);
               checkPermission(err.code);
             }
           }
@@ -6304,18 +6331,29 @@ ${o3}
         });
       };
       const handleConfirm = () => {
-        formatAppLog("log", "at pages/report/index.vue:214", reason);
+        formatAppLog("log", "at pages/report/index.vue:233", reason);
         reasonName.value = tempReason.value;
         popup.value.close();
       };
-      const __returned__ = { reasonOption, popup, reason, reasonName, handleShowPop, tempReason, change, imageList, imageDetailList, sourceTypeIndex, sourceType: sourceType2, checkPermission, handleUpload, previewImage, handleConfirm, ref: vue.ref, get permision() {
+      const handleSubmit = () => {
+        uni.navigateTo({
+          url: "/pages/report/reportSuccess"
+        });
+        reason.value = "";
+        reasonName.value = "请选择";
+        tempReason.value = "";
+        imageList.value = [];
+        imageDetailList.value = [];
+        code.value = "扫一扫";
+      };
+      const __returned__ = { code, handleScan, checkPermission, reasonOption, popup, reason, reasonName, handleShowPop, tempReason, change, imageList, imageDetailList, sourceTypeIndex, sourceType: sourceType2, handleUpload, previewImage, handleConfirm, handleSubmit, ref: vue.ref, get permision() {
         return permission;
       } };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   };
-  function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$5);
     const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_1$1);
     const _component_uni_data_checkbox = resolveEasycom(vue.resolveDynamicComponent("uni-data-checkbox"), __easycom_2);
@@ -6326,9 +6364,18 @@ ${o3}
         "is-full": ""
       }, {
         default: vue.withCtx(() => [
-          vue.createElementVNode("view", { class: "form-item" }, [
-            vue.createElementVNode("text", { class: "form-label" }, "损坏申报编码"),
-            vue.createElementVNode("text", { class: "form-value" }, "DES-000000013")
+          vue.createElementVNode("view", { class: "form-item w_100 jc-sb" }, [
+            vue.createElementVNode("view", { class: "form-label" }, "损坏申报编码"),
+            vue.createElementVNode(
+              "view",
+              {
+                class: "form-value pl-20",
+                onClick: $setup.handleScan
+              },
+              vue.toDisplayString($setup.code),
+              1
+              /* TEXT */
+            )
           ]),
           vue.createCommentVNode(" 损坏原因 "),
           vue.createElementVNode("view", { class: "form-item w_100 jc-sb" }, [
@@ -6445,7 +6492,10 @@ ${o3}
         /* STABLE */
       }),
       vue.createElementVNode("view", { class: "submit-btn" }, [
-        vue.createElementVNode("button", { class: "custom-btn" }, "提交申报")
+        vue.createElementVNode("button", {
+          class: "custom-btn",
+          onClick: $setup.handleSubmit
+        }, "提交申报")
       ]),
       vue.createVNode(
         _component_uni_popup,
@@ -6488,23 +6538,23 @@ ${o3}
       )
     ]);
   }
-  const PagesReportIndex = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$n], ["__scopeId", "data-v-14542b8b"], ["__file", "E:/project/dileiwo-app/pages/report/index.vue"]]);
-  const _sfc_main$n = {
+  const PagesReportIndex = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$o], ["__scopeId", "data-v-14542b8b"], ["__file", "E:/project/dileiwo-app/pages/report/index.vue"]]);
+  const _sfc_main$o = {
     __name: "index",
     setup(__props, { expose: __expose }) {
       __expose();
-      const list = vue.ref({});
+      const list2 = vue.ref({});
       const goDetail = () => {
         uni.navigateTo({
           url: "/pages/delivery/detailList"
         });
       };
-      const __returned__ = { list, goDetail, ref: vue.ref };
+      const __returned__ = { list: list2, goDetail, ref: vue.ref };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   };
-  function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "auth-container" }, [
       vue.createElementVNode("scroll-view", null, [
         vue.createElementVNode("view", {
@@ -6518,39 +6568,64 @@ ${o3}
           ]),
           vue.createElementVNode("image", {
             class: "arrow",
-            src: _imports_0$4,
+            src: _imports_0$5,
             mode: ""
           })
         ])
       ])
     ]);
   }
-  const PagesDeliveryIndex = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$m], ["__scopeId", "data-v-87751f05"], ["__file", "E:/project/dileiwo-app/pages/delivery/index.vue"]]);
-  const _sfc_main$m = {
+  const PagesDeliveryIndex = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$n], ["__scopeId", "data-v-87751f05"], ["__file", "E:/project/dileiwo-app/pages/delivery/index.vue"]]);
+  const _sfc_main$n = {
     __name: "detailList",
     setup(__props, { expose: __expose }) {
       __expose();
-      const formData = vue.ref({
-        isCateCorrect: ""
-      });
-      const changeCategory = (e2) => {
-        formatAppLog("log", "at pages/delivery/detailList.vue:39", e2);
-        formData.value.isCateCorrect = e2.detail.value;
+      const handleScan = async () => {
+        let status = await checkPermission();
+        if (status !== 1) {
+          return;
+        }
+        uni.scanCode({
+          success: (res2) => {
+            list.value.push({
+              packageType: res2.result,
+              status: 1
+            });
+          },
+          fail: (err) => {
+          }
+        });
       };
-      const changeQuantity = (e2) => {
-        formatAppLog("log", "at pages/delivery/detailList.vue:43", e2);
-        formData.value.quantity = e2.detail.value;
+      const checkPermission = async (code) => {
+        let status = permission.isIOS ? await permission.requestIOS("camera") : await permission.requestAndroid("android.permission.CAMERA");
+        if (status === null || status === 1) {
+          status = 1;
+        } else {
+          uni.showModal({
+            content: "需要相机权限",
+            confirmText: "设置",
+            success: function(res2) {
+              if (res2.confirm) {
+                permission.gotoAppSetting();
+              }
+            }
+          });
+        }
+        return status;
       };
-      const changeAmbiguity = (e2) => {
-        formatAppLog("log", "at pages/delivery/detailList.vue:47", e2);
-        formData.value.quantity = e2.detail.value;
+      const handleFinish = () => {
+        uni.navigateTo({
+          url: "/pages/delivery/deliveryError?errorType=2"
+        });
       };
-      const __returned__ = { formData, changeCategory, changeQuantity, changeAmbiguity, ref: vue.ref };
+      const __returned__ = { handleScan, checkPermission, handleFinish, ref: vue.ref, get permision() {
+        return permission;
+      } };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   };
-  function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "check-container pt-16" }, [
       vue.createElementVNode("view", { class: "detail-list bg_white" }, [
         vue.createElementVNode("view", { class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28" }, [
@@ -6568,29 +6643,49 @@ ${o3}
           ])
         ])
       ]),
-      vue.createElementVNode("view", { class: "w_100 mt-48" }, [
-        vue.createElementVNode("button", { class: "custom-btn" }, "结束包装出库")
+      vue.createElementVNode("view", { class: "w_100 mt-48 fixed pb-20 safe-area-bottom" }, [
+        vue.createElementVNode("button", {
+          class: "custom-btn",
+          type: "",
+          onClick: $setup.handleScan
+        }, "扫一扫"),
+        vue.createElementVNode("button", {
+          class: "custom-btn mt-10",
+          onClick: $setup.handleFinish
+        }, "结束包装出库")
       ])
     ]);
   }
-  const PagesDeliveryDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$l], ["__scopeId", "data-v-576bb335"], ["__file", "E:/project/dileiwo-app/pages/delivery/detailList.vue"]]);
-  const _imports_0$3 = "/static/image/delivery-error-1@2x.png";
+  const PagesDeliveryDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$m], ["__scopeId", "data-v-576bb335"], ["__file", "E:/project/dileiwo-app/pages/delivery/detailList.vue"]]);
+  const _imports_0$4 = "/static/image/delivery-error-1@2x.png";
   const _imports_1$1 = "/static/image/delivery-succes-1@2x.png";
-  const _sfc_main$l = {
+  const _sfc_main$m = {
     __name: "deliveryError",
     setup(__props, { expose: __expose }) {
       __expose();
       const errorType = vue.ref(2);
+      onLoad((option) => {
+        formatAppLog("log", "at pages/delivery/deliveryError.vue:45", option);
+        let data = option;
+        errorType.value = data.errorType;
+      });
       const active = vue.ref(1);
       const handleChange = (type) => {
         active.value = type;
       };
-      const __returned__ = { errorType, active, handleChange, ref: vue.ref };
+      const handleBack = () => {
+        uni.navigateBack({
+          delta: 2
+        });
+      };
+      const __returned__ = { errorType, active, handleChange, handleBack, ref: vue.ref, get onLoad() {
+        return onLoad;
+      } };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   };
-  function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "auth-error-container" }, [
       $setup.errorType == 1 ? (vue.openBlock(), vue.createElementBlock("view", {
         key: 0,
@@ -6598,7 +6693,7 @@ ${o3}
       }, [
         vue.createElementVNode("image", {
           class: "error-image",
-          src: _imports_0$3,
+          src: _imports_0$4,
           mode: ""
         }),
         vue.createElementVNode("text", { class: "error-title fs-36 mt-36" }, "未完成初始认证"),
@@ -6614,7 +6709,10 @@ ${o3}
           mode: ""
         }),
         vue.createElementVNode("text", { class: "error-title fs-36 mt-36" }, "出库完成！"),
-        vue.createElementVNode("button", { class: "custom-btn verify-btn" }, "继续包装出库")
+        vue.createElementVNode("button", {
+          class: "custom-btn verify-btn",
+          onClick: $setup.handleBack
+        }, "继续包装出库")
       ])) : (vue.openBlock(), vue.createElementBlock("view", {
         key: 2,
         class: "pt-34 pl-32 pr-32"
@@ -6661,80 +6759,143 @@ ${o3}
       ]))
     ]);
   }
-  const PagesDeliveryDeliveryError = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$k], ["__file", "E:/project/dileiwo-app/pages/delivery/deliveryError.vue"]]);
-  const _sfc_main$k = {
+  const PagesDeliveryDeliveryError = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$l], ["__file", "E:/project/dileiwo-app/pages/delivery/deliveryError.vue"]]);
+  const _sfc_main$l = {
     __name: "detailList",
     setup(__props, { expose: __expose }) {
       __expose();
-      const formData = vue.ref({
-        isCateCorrect: ""
-      });
-      const changeCategory = (e2) => {
-        formatAppLog("log", "at pages/recycle/detailList.vue:47", e2);
-        formData.value.isCateCorrect = e2.detail.value;
+      const list2 = vue.ref([{
+        packageType: "顺丰#SFxnv00927",
+        staus: 2
+      }]);
+      const pageTo = () => {
+        uni.navigateTo({
+          url: "/pages/recycle/recycleSuccess"
+        });
       };
-      const changeQuantity = (e2) => {
-        formatAppLog("log", "at pages/recycle/detailList.vue:51", e2);
-        formData.value.quantity = e2.detail.value;
+      const handleScan = async () => {
+        let status = await checkPermission();
+        if (status !== 1) {
+          return;
+        }
+        uni.scanCode({
+          success: (res2) => {
+            list2.value.push({
+              packageType: res2.result,
+              status: 1
+            });
+          },
+          fail: (err) => {
+          }
+        });
       };
-      const changeAmbiguity = (e2) => {
-        formatAppLog("log", "at pages/recycle/detailList.vue:55", e2);
-        formData.value.quantity = e2.detail.value;
+      const checkPermission = async (code) => {
+        let status = permission.isIOS ? await permission.requestIOS("camera") : await permission.requestAndroid("android.permission.CAMERA");
+        if (status === null || status === 1) {
+          status = 1;
+        } else {
+          uni.showModal({
+            content: "需要相机权限",
+            confirmText: "设置",
+            success: function(res2) {
+              if (res2.confirm) {
+                permission.gotoAppSetting();
+              }
+            }
+          });
+        }
+        return status;
       };
-      const __returned__ = { formData, changeCategory, changeQuantity, changeAmbiguity, ref: vue.ref };
+      const handleFinish = () => {
+        uni.switchTab({
+          url: "/pages/index/index"
+        });
+      };
+      const __returned__ = { list: list2, pageTo, handleScan, checkPermission, handleFinish, ref: vue.ref, get permision() {
+        return permission;
+      } };
+      Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
+      return __returned__;
+    }
+  };
+  function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", { class: "check-container pt-16" }, [
+      vue.createElementVNode("view", { class: "detail-list bg_white" }, [
+        (vue.openBlock(true), vue.createElementBlock(
+          vue.Fragment,
+          null,
+          vue.renderList($setup.list, (item, index2) => {
+            return vue.openBlock(), vue.createElementBlock("view", {
+              class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28",
+              key: index2,
+              onClick: _cache[0] || (_cache[0] = ($event) => $setup.pageTo())
+            }, [
+              vue.createElementVNode(
+                "view",
+                { class: "title" },
+                vue.toDisplayString(item.packageType),
+                1
+                /* TEXT */
+              ),
+              vue.createElementVNode("view", { class: "sub uni-success" }, " 认证成功 ")
+            ]);
+          }),
+          128
+          /* KEYED_FRAGMENT */
+        ))
+      ]),
+      vue.createElementVNode("view", {
+        class: "footer w_100 mt-48 fixed pb-20 safe-area-bottom",
+        style: {}
+      }, [
+        vue.createElementVNode("button", {
+          class: "custom-btn",
+          type: "",
+          onClick: $setup.handleScan
+        }, "扫一扫"),
+        vue.createElementVNode("button", {
+          class: "custom-btn mt-10",
+          onClick: $setup.handleFinish
+        }, "结束回收复查")
+      ])
+    ]);
+  }
+  const PagesRecycleDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$k], ["__scopeId", "data-v-0a052cc1"], ["__file", "E:/project/dileiwo-app/pages/recycle/detailList.vue"]]);
+  const _imports_0$3 = "/static/image/recycle-success@2x.png";
+  const _sfc_main$k = {
+    __name: "recycleSuccess",
+    setup(__props, { expose: __expose }) {
+      __expose();
+      const errorType = vue.ref(1);
+      const handleBack = () => {
+        uni.navigateBack({
+          delta: 1
+        });
+      };
+      const __returned__ = { errorType, handleBack, ref: vue.ref };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   };
   function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view", { class: "check-container pt-16" }, [
-      vue.createElementVNode("view", { class: "detail-list bg_white" }, [
-        vue.createElementVNode("view", { class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28" }, [
-          vue.createElementVNode("view", { class: "title" }, " 顺丰#SFxnv00927 "),
-          vue.createElementVNode("view", { class: "sub uni-error" }, " 未认证 ")
-        ]),
-        vue.createElementVNode("view", { class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28" }, [
-          vue.createElementVNode("view", { class: "title" }, " 顺丰#SFxnv00927 "),
-          vue.createElementVNode("view", { class: "sub uni-error" }, " 型号错误 ")
-        ]),
-        vue.createElementVNode("view", { class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28" }, [
-          vue.createElementVNode("view", { class: "title" }, " 顺丰#SFxnv00927 "),
-          vue.createElementVNode("view", { class: "sub uni-success" }, " 认证成功 ")
-        ])
-      ]),
-      vue.createElementVNode("view", { class: "w_100 mt-48" }, [
-        vue.createElementVNode("button", { class: "custom-btn" }, "下一步")
-      ])
-    ]);
-  }
-  const PagesRecycleDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$j], ["__scopeId", "data-v-0a052cc1"], ["__file", "E:/project/dileiwo-app/pages/recycle/detailList.vue"]]);
-  const _imports_0$2 = "/static/image/recycle-success@2x.png";
-  const _sfc_main$j = {
-    __name: "recycleSuccess",
-    setup(__props, { expose: __expose }) {
-      __expose();
-      const errorType = vue.ref(1);
-      const __returned__ = { errorType, ref: vue.ref };
-      Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
-      return __returned__;
-    }
-  };
-  function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "auth-error-container" }, [
       vue.createElementVNode("view", { class: "content" }, [
         vue.createElementVNode("image", {
           class: "error-image",
-          src: _imports_0$2,
+          src: _imports_0$3,
           mode: ""
         }),
         vue.createElementVNode("text", { class: "error-title fs-36" }, "回收复查完成"),
         vue.createElementVNode("text", { class: "error-desc fs-28 color-subTitlle" }, "请注意若有损坏包装，请再进行损坏申报"),
-        vue.createElementVNode("button", { class: "custom-btn verify-btn" }, "继续回收复查")
+        vue.createElementVNode("button", {
+          class: "custom-btn verify-btn",
+          onClick: $setup.handleBack
+        }, "继续回收复查")
       ])
     ]);
   }
-  const PagesRecycleRecycleSuccess = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$i], ["__file", "E:/project/dileiwo-app/pages/recycle/recycleSuccess.vue"]]);
-  const _sfc_main$i = {
+  const PagesRecycleRecycleSuccess = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$j], ["__file", "E:/project/dileiwo-app/pages/recycle/recycleSuccess.vue"]]);
+  const _sfc_main$j = {
     __name: "index",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -6748,7 +6909,7 @@ ${o3}
       return __returned__;
     }
   };
-  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "auth-container" }, [
       vue.createElementVNode("scroll-view", null, [
         vue.createElementVNode("view", {
@@ -6765,15 +6926,15 @@ ${o3}
           ]),
           vue.createElementVNode("image", {
             class: "arrow",
-            src: _imports_0$4,
+            src: _imports_0$5,
             mode: ""
           })
         ])
       ])
     ]);
   }
-  const PagesAuthIndex = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__scopeId", "data-v-3f748249"], ["__file", "E:/project/dileiwo-app/pages/auth/index.vue"]]);
-  const _sfc_main$h = {
+  const PagesAuthIndex = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$i], ["__scopeId", "data-v-3f748249"], ["__file", "E:/project/dileiwo-app/pages/auth/index.vue"]]);
+  const _sfc_main$i = {
     name: "uniFormsItem",
     options: {
       virtualHost: true
@@ -7105,7 +7266,7 @@ ${o3}
       }
     }
   };
-  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -7161,7 +7322,7 @@ ${o3}
       /* CLASS */
     );
   }
-  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__scopeId", "data-v-462874dd"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue"]]);
+  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__scopeId", "data-v-462874dd"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue"]]);
   var pattern = {
     email: /^\S+?@\S+?\.\S+?$/,
     idcard: /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/,
@@ -7379,20 +7540,20 @@ ${o3}
         range,
         errorMessage
       } = rule;
-      let list = new Array(range.length);
+      let list2 = new Array(range.length);
       for (let i2 = 0; i2 < range.length; i2++) {
         const item = range[i2];
         if (types.object(item) && item.value !== void 0) {
-          list[i2] = item.value;
+          list2[i2] = item.value;
         } else {
-          list[i2] = item;
+          list2[i2] = item;
         }
       }
       let result = false;
       if (Array.isArray(value)) {
-        result = new Set(value.concat(list)).size === list.length;
+        result = new Set(value.concat(list2)).size === list2.length;
       } else {
-        if (list.indexOf(value) > -1) {
+        if (list2.indexOf(value) > -1) {
           result = true;
         }
       }
@@ -7725,7 +7886,7 @@ ${o3}
       return false;
     }
   };
-  const _sfc_main$g = {
+  const _sfc_main$h = {
     name: "uniForms",
     emits: ["validate", "submit"],
     options: {
@@ -8027,15 +8188,15 @@ ${o3}
       _isEqual: isEqual
     }
   };
-  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-forms" }, [
       vue.createElementVNode("form", null, [
         vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
       ])
     ]);
   }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-9a1e3c32"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-forms/components/uni-forms/uni-forms.vue"]]);
-  const _sfc_main$f = {
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__scopeId", "data-v-9a1e3c32"], ["__file", "E:/project/dileiwo-app/uni_modules/uni-forms/components/uni-forms/uni-forms.vue"]]);
+  const _sfc_main$g = {
     __name: "check",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -8064,7 +8225,7 @@ ${o3}
       return __returned__;
     }
   };
-  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_forms_item = resolveEasycom(vue.resolveDynamicComponent("uni-forms-item"), __easycom_0$2);
     const _component_uni_forms = resolveEasycom(vue.resolveDynamicComponent("uni-forms"), __easycom_1);
     return vue.openBlock(), vue.createElementBlock("view", { class: "check-container" }, [
@@ -8185,36 +8346,29 @@ ${o3}
       ])
     ]);
   }
-  const PagesAuthCheck = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-f0ba12bd"], ["__file", "E:/project/dileiwo-app/pages/auth/check.vue"]]);
-  const _sfc_main$e = {
+  const PagesAuthCheck = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-f0ba12bd"], ["__file", "E:/project/dileiwo-app/pages/auth/check.vue"]]);
+  const _sfc_main$f = {
     __name: "detailList",
     setup(__props, { expose: __expose }) {
       __expose();
-      const safeArea = vue.ref({});
-      uni.getSystemInfo({
-        success: (res2) => {
-          formatAppLog("log", "at pages/auth/detailList.vue:50", res2.platform);
-          if (res2.platform === "android") {
-            formatAppLog("log", "at pages/auth/detailList.vue:53", res2);
-            safeArea.value = {
-              top: res2.statusBarHeight,
-              // 可以获取更多安全区域的数据，如下
-              bottom: res2.safeArea.bottom
-            };
-          } else if (res2.platform === "ios") {
-            safeArea.value = {
-              top: res2.statusBarHeight,
-              // 可以获取更多安全区域的数据，如下
-              bottom: res2.safeAreaInsets.bottom
-            };
-          }
-          formatAppLog("log", "at pages/auth/detailList.vue:66", safeArea.value);
-        }
+      onLoad((option) => {
+        let data = option;
+        formatAppLog("log", "at pages/auth/detailList.vue:33", data);
       });
       const formData = vue.ref({
         isCateCorrect: ""
       });
-      const list = vue.ref([]);
+      const pageTo = () => {
+        uni.navigateTo({
+          url: "/pages/auth/authError"
+        });
+      };
+      const list2 = vue.ref([
+        {
+          packageType: "顺丰#SFxnv00927",
+          staus: 2
+        }
+      ]);
       const handleScan = async () => {
         let status = await checkPermission();
         if (status !== 1) {
@@ -8222,7 +8376,7 @@ ${o3}
         }
         uni.scanCode({
           success: (res2) => {
-            list.value.push({
+            list2.value.push({
               packageType: res2.result,
               status: 1
             });
@@ -8248,31 +8402,31 @@ ${o3}
         }
         return status;
       };
-      const __returned__ = { safeArea, formData, list, handleScan, checkPermission, get permision() {
+      const handleFinish = () => {
+        uni.navigateBack({
+          delta: 2
+        });
+      };
+      const __returned__ = { formData, pageTo, list: list2, handleScan, checkPermission, handleFinish, get permision() {
         return permission;
-      }, ref: vue.ref };
+      }, ref: vue.ref, onMounted: vue.onMounted, getCurrentInstance: vue.getCurrentInstance, get onLoad() {
+        return onLoad;
+      } };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   };
-  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "check-container pt-16" }, [
       vue.createElementVNode("view", { class: "detail-list bg_white" }, [
-        vue.createElementVNode("view", { class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28" }, [
-          vue.createElementVNode("view", { class: "title" }, " 顺丰#SFxnv00927 "),
-          vue.createElementVNode("view", { class: "sub uni-error" }, " 未认证 ")
-        ]),
-        vue.createElementVNode("view", { class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28" }, [
-          vue.createElementVNode("view", { class: "title" }, " 顺丰#SFxnv00927 "),
-          vue.createElementVNode("view", { class: "sub uni-error" }, " 型号错误 ")
-        ]),
         (vue.openBlock(true), vue.createElementBlock(
           vue.Fragment,
           null,
           vue.renderList($setup.list, (item, index2) => {
             return vue.openBlock(), vue.createElementBlock("view", {
               class: "detail-item d-f w_100 jc-sb ai-c pl-32 pr-28",
-              key: index2
+              key: index2,
+              onClick: _cache[0] || (_cache[0] = ($event) => $setup.pageTo())
             }, [
               vue.createElementVNode(
                 "view",
@@ -8289,7 +8443,7 @@ ${o3}
         ))
       ]),
       vue.createElementVNode("view", {
-        class: "footer w_100 mt-48 fixed safe-area-bottom pb-20",
+        class: "footer w_100 mt-48 fixed pb-20 safe-area-bottom",
         style: {}
       }, [
         vue.createElementVNode("button", {
@@ -8297,25 +8451,44 @@ ${o3}
           type: "",
           onClick: $setup.handleScan
         }, "扫一扫"),
-        vue.createElementVNode("button", { class: "custom-btn mt-10" }, "结束初始认证")
+        vue.createElementVNode("button", {
+          class: "custom-btn mt-10",
+          onClick: $setup.handleFinish
+        }, "结束初始认证1")
       ])
     ]);
   }
-  const PagesAuthDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-9ed9ae8a"], ["__file", "E:/project/dileiwo-app/pages/auth/detailList.vue"]]);
-  const _imports_0$1 = "/static/image/auth-error-1@2x.png";
+  const PagesAuthDetailList = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-9ed9ae8a"], ["__file", "E:/project/dileiwo-app/pages/auth/detailList.vue"]]);
+  const _imports_0$2 = "/static/image/auth-error-1@2x.png";
   const _imports_1 = "/static/image/auth-error-2@2x.png";
   const _imports_2 = "/static/image/auth-error-3@2x.png";
-  const _sfc_main$d = {
+  const _sfc_main$e = {
     __name: "authError",
     setup(__props, { expose: __expose }) {
       __expose();
       const errorType = vue.ref(1);
-      const __returned__ = { errorType, ref: vue.ref };
+      onLoad((option) => {
+        formatAppLog("log", "at pages/auth/authError.vue:33", option);
+        let data = option;
+        errorType.value = data.errorType;
+      });
+      const navigatorBack = () => {
+        if (errorType.value == 3) {
+          uni.navigateBack({
+            delta: 3
+          });
+          return;
+        }
+        uni.navigateBack();
+      };
+      const __returned__ = { errorType, navigatorBack, ref: vue.ref, get onLoad() {
+        return onLoad;
+      } };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   };
-  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "auth-error-container" }, [
       vue.createElementVNode("view", { class: "content" }, [
         $setup.errorType == 1 ? (vue.openBlock(), vue.createElementBlock(
@@ -8324,7 +8497,7 @@ ${o3}
           [
             vue.createElementVNode("image", {
               class: "error-image",
-              src: _imports_0$1,
+              src: _imports_0$2,
               mode: ""
             }),
             vue.createElementVNode("text", { class: "error-title fs-36" }, "型号核实有误"),
@@ -8365,17 +8538,53 @@ ${o3}
               src: _imports_2,
               mode: ""
             }),
-            vue.createElementVNode("text", { class: "error-title fs-36" }, "型号核实有误"),
+            vue.createElementVNode("text", { class: "error-title fs-36" }, "疑品包装"),
             vue.createElementVNode("text", { class: "error-desc fs-28 color-subTitlle" }, "请将疑品包装取出，进行损坏申报")
           ],
           64
           /* STABLE_FRAGMENT */
         )) : vue.createCommentVNode("v-if", true),
-        vue.createElementVNode("button", { class: "custom-btn verify-btn" }, "继续初始认证")
+        vue.createElementVNode("button", {
+          class: "custom-btn verify-btn",
+          onClick: _cache[0] || (_cache[0] = ($event) => $setup.navigatorBack())
+        }, "继续初始认证")
       ])
     ]);
   }
-  const PagesAuthAuthError = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__file", "E:/project/dileiwo-app/pages/auth/authError.vue"]]);
+  const PagesAuthAuthError = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__file", "E:/project/dileiwo-app/pages/auth/authError.vue"]]);
+  const _imports_0$1 = "/static/image/report-success@2x.png";
+  const _sfc_main$d = {
+    __name: "reportSuccess",
+    setup(__props, { expose: __expose }) {
+      __expose();
+      const handleBack = () => {
+        uni.navigateBack({
+          delta: 1
+        });
+      };
+      const __returned__ = { handleBack, ref: vue.ref };
+      Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
+      return __returned__;
+    }
+  };
+  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", { class: "auth-error-container" }, [
+      vue.createElementVNode("view", { class: "content" }, [
+        vue.createElementVNode("image", {
+          class: "error-image",
+          src: _imports_0$1,
+          mode: ""
+        }),
+        vue.createElementVNode("text", { class: "error-title fs-36" }, "提交完成"),
+        vue.createElementVNode("text", { class: "error-desc fs-28 color-subTitlle" }, "感谢您的提交，迪雷沃会尽快审核处理"),
+        vue.createElementVNode("button", {
+          class: "custom-btn verify-btn",
+          onClick: $setup.handleBack
+        }, "继续损坏申报")
+      ])
+    ]);
+  }
+  const PagesReportReportSuccess = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__file", "E:/project/dileiwo-app/pages/report/reportSuccess.vue"]]);
   function obj2strClass(obj) {
     let classess = "";
     for (let key in obj) {
@@ -9273,8 +9482,8 @@ ${o3}
       hook.emit(HOOK_SETUP$1, pluginDescriptor, setupFn);
     } else {
       const proxy = enableProxy ? new ApiProxy$1(pluginDescriptor, hook) : null;
-      const list = target.__VUE_DEVTOOLS_PLUGINS__ = target.__VUE_DEVTOOLS_PLUGINS__ || [];
-      list.push({
+      const list2 = target.__VUE_DEVTOOLS_PLUGINS__ = target.__VUE_DEVTOOLS_PLUGINS__ || [];
+      list2.push({
         pluginDescriptor,
         setupFn,
         proxy
@@ -9294,8 +9503,8 @@ ${o3}
       key = null;
     return vue.inject(key !== null ? key : storeKey);
   }
-  function find(list, f2) {
-    return list.filter(f2)[0];
+  function find(list2, f2) {
+    return list2.filter(f2)[0];
   }
   function deepCopy(obj, cache) {
     if (cache === void 0)
@@ -11721,6 +11930,7 @@ ${o3}
   __definePage("pages/auth/check", PagesAuthCheck);
   __definePage("pages/auth/detailList", PagesAuthDetailList);
   __definePage("pages/auth/authError", PagesAuthAuthError);
+  __definePage("pages/report/reportSuccess", PagesReportReportSuccess);
   __definePage("pages/login/login", PagesLoginLogin);
   __definePage("pages/component/image/image", PagesComponentImageImage);
   __definePage("pages/API/login/login", PagesAPILoginLogin);
@@ -12141,8 +12351,8 @@ ${o3}
       hook.emit(HOOK_SETUP, pluginDescriptor, setupFn);
     } else {
       const proxy = enableProxy ? new ApiProxy(descriptor, hook) : null;
-      const list = target.__VUE_DEVTOOLS_PLUGINS__ = target.__VUE_DEVTOOLS_PLUGINS__ || [];
-      list.push({
+      const list2 = target.__VUE_DEVTOOLS_PLUGINS__ = target.__VUE_DEVTOOLS_PLUGINS__ || [];
+      list2.push({
         pluginDescriptor: descriptor,
         setupFn,
         proxy
@@ -13602,7 +13812,7 @@ This will fail in production if not fixed.`);
     storeToRefs
   }, Symbol.toStringTag, { value: "Module" }));
   var define_process_env_UNI_STATISTICS_CONFIG_default = { version: "2", enable: true };
-  var define_process_env_UNI_STAT_TITLE_JSON_default = { "pages/API/scan-code/scan-code": "扫码", "pages/report/index": "损坏申报", "pages/delivery/index": "选择出货单号", "pages/delivery/detailList": "明细列表", "pages/recycle/detailList": "明细列表", "pages/auth/index": "请选择认证单号", "pages/auth/check": "包装核对讯息", "pages/auth/detailList": "明细列表", "pages/component/image/image": "image", "pages/API/login/login": "授权登录", "pages/API/subnvue/subnvue": "原生子窗体", "pages/API/get-user-info/get-user-info": "获取用户信息", "pages/API/pull-down-refresh/pull-down-refresh": "下拉刷新", "pages/API/clipboard/clipboard": "剪贴板", "pages/API/request/request": "网络请求", "pages/API/image/image": "图片", "pages/API/storage/storage": "数据存储" };
+  var define_process_env_UNI_STAT_TITLE_JSON_default = { "pages/report/index": "损坏申报", "pages/delivery/index": "选择出货单号", "pages/delivery/detailList": "明细列表", "pages/recycle/detailList": "明细列表", "pages/auth/index": "请选择认证单号", "pages/auth/check": "包装核对讯息", "pages/auth/detailList": "明细列表", "pages/component/image/image": "image", "pages/API/login/login": "授权登录", "pages/API/subnvue/subnvue": "原生子窗体", "pages/API/get-user-info/get-user-info": "获取用户信息", "pages/API/pull-down-refresh/pull-down-refresh": "下拉刷新", "pages/API/clipboard/clipboard": "剪贴板", "pages/API/request/request": "网络请求", "pages/API/image/image": "图片", "pages/API/storage/storage": "数据存储" };
   var define_process_env_UNI_STAT_UNI_CLOUD_default = {};
   const sys = uni.getSystemInfoSync();
   const STAT_VERSION = "4.45";

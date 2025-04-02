@@ -1196,6 +1196,11 @@
 .form-item .form-label[data-v-14542b8b] {
   width: 6.25rem;
 }
+.form-item .form-value[data-v-14542b8b] {
+  max-width: 15rem;
+  word-wrap: wrap;
+  word-break: break-all;
+}
 .form-item .select-text[data-v-14542b8b] {
   color: #45464A;
 }

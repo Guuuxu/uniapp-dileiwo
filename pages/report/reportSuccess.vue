@@ -1,10 +1,10 @@
 <template>
 	<view class="auth-error-container ">
 		<view class="content">
-			<image class="error-image" src="/static/image/recycle-success@2x.png" mode=""></image>
-				<text class="error-title fs-36">回收复查完成</text>
-				<text class="error-desc fs-28 color-subTitlle">请注意若有损坏包装，请再进行损坏申报</text>
-			<button class="custom-btn verify-btn" @click="handleBack">继续回收复查</button>
+			<image class="error-image" src="/static/image/report-success@2x.png" mode=""></image>
+				<text class="error-title fs-36">提交完成</text>
+				<text class="error-desc fs-28 color-subTitlle">感谢您的提交，迪雷沃会尽快审核处理</text>
+			<button class="custom-btn verify-btn" @click="handleBack">继续损坏申报</button>
 		</view>
 	</view>
 </template>
@@ -14,7 +14,6 @@
 		ref
 	} from 'vue';
 
-	const errorType = ref(1)
 	const handleBack = ()=>{
 		 uni.navigateBack({
 			 delta: 1
